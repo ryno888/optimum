@@ -17,7 +17,7 @@ body {
     font-family: 'Signika', sans-serif;
     font-size: 11px !important;
     font-size: 1.4em;
-    background-color: #3e383a;
+    background-color: #FFF;
     color: rgba(255,255,255,0.9);
 }
 
@@ -79,6 +79,7 @@ header span,
 }
 
 header {
+    background-color: #FFF;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
@@ -109,6 +110,7 @@ svg {
 }
 
 .header.animated-header {
+    .logo{ opacity: 0; }
     position: fixed;
     height: 135px !important;
     top: 0;
@@ -268,13 +270,17 @@ section#about-2 .container {
 }
 
 #about-1 .container-fluid {
-    background: #606465;
+    background: #3e383a;
 }
 
 #about-2 .container-fluid {
     background: #ab977f;
 }
+#contact .container-fluid {
+    background: #3e383a;
+}
 
+#contact .wrap-contact .container-fluid,
 #about-1 .wrap-about .container-fluid,
 #about-2 .wrap-about .container-fluid  {
     background: transparent;
@@ -283,6 +289,11 @@ section#about-2 .container {
 .wrap-about {
     display: block;
     padding: 2em;
+}
+.wrap-contact {
+    display: block;
+    padding: 2em;
+    padding-bottom: 100px;
 }
 
 .about .social-account {
